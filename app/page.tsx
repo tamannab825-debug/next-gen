@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="bg-[#f5f6fa] min-h-screen text-gray-800">
+      
 
         {/* ================= TOP NAV ================= */}
       <header className="flex justify-between items-center px-8 py-5 bg-white shadow-sm">
@@ -32,7 +33,7 @@ export default function HomePage() {
 
       {/* ================= HERO ================= */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-16 grid lg:grid-cols-2 gap-12 items-center">
-
+        
         <div>
           <h1 className="text-4xl font-semibold leading-tight text-gray-900">
             Skill Based Hiring <br />
@@ -146,8 +147,8 @@ export default function HomePage() {
         <div
           key={i}
           className="group relative bg-[#f5f6fa] rounded-3xl p-7 
-                     hover:bg-white hover:shadow-xl 
-                     transition-all duration-300 hover:-translate-y-2"
+           hover:bg-white hover:shadow-xl 
+          transition-all duration-300 hover:-translate-y-2"
         >
 
           {/* Glow effect */}
@@ -155,7 +156,7 @@ export default function HomePage() {
 
           {/* Step number */}
           <div className="absolute -top-4 left-6 bg-white shadow px-3 py-1 rounded-full text-xs font-semibold text-red-500">
-            {String(i + 1).padStart(2, "0")}
+            {String( i + 1).padStart(2, "0")}
           </div>
 
           {/* Icon */}
