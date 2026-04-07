@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { LayoutDashboard, GalleryHorizontal, TicketCheck, UserRoundPen ,Network, BriefcaseBusiness,} from "lucide-react";
+import { LayoutDashboard, GalleryHorizontal, TicketCheck, UserRoundPen ,Network, BriefcaseBusiness, CirclePile, BrainCog, FileUser,} from "lucide-react";
 
 export default function CandidateLayout({ children }) {
   const [open, setOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function CandidateLayout({ children }) {
           />
           <div>
             <p className="text-sm font-semibold">Franklin Jr</p>
-            <p className="text-xs text-gray-500">Superadmin</p>
+            <p className="text-xs text-gray-500">Candidate</p>
             </div>
           
         </button>
@@ -47,6 +47,9 @@ export default function CandidateLayout({ children }) {
           <SidebarLink title="Profile" href="/optional2/profile" pathname={pathname} Icon={ UserRoundPen }/>
           <SidebarLink title="Networking" href="/optional2/networking" pathname={pathname} Icon={Network} />
           <SidebarLink title="AI Coach" href="/optional2/AI-coach" pathname={pathname} Icon={BriefcaseBusiness}/>
+          <SidebarLink title="Mentorship" href="/optional2/mentorship" pathname={pathname} Icon={CirclePile}/>
+          <SidebarLink title="Learning Tracks" href="/optional2/learning" pathname={pathname} Icon={BrainCog}/>
+          <SidebarLink title="Reputation & Gamification" href="/optional2/reputation" pathname={pathname} Icon={FileUser}/>
         </nav>
       </aside>
 

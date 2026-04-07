@@ -9,7 +9,12 @@ export default function CompanyCandidateReview() {
 
 {/* Hiring Pipeline */}
 <div className="bg-white rounded-2xl p-6 shadow-sm lg:col-span-2">
-  <h3 className="font-semibold text-gray-700 mb-4">Candidate Pipeline</h3>
+ <div className="flex justify-between mb-4">
+   <h3 className="font-semibold text-gray-700 ">Candidate Pipeline</h3>
+   <a href="/optional3/pipeline">
+              <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All </button>
+              </a>
+ </div>
 
   <div className="grid grid-cols-4 gap-4">
 
@@ -74,7 +79,12 @@ export default function CompanyCandidateReview() {
 
 {/* Live Trial Board */}
 <div className="bg-white rounded-2xl p-6 shadow-sm">
-  <h3 className="font-semibold text-gray-700 mb-4">Live Job Trials</h3>
+ <div className="flex justify-between  mb-4">
+   <h3 className="font-semibold text-gray-700">Live Job Trials</h3>
+    <a href="/optional3/live-job">
+              <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All </button>
+              </a>
+ </div>
 
   {[
     ["Aman Sharma","Frontend UI Task","72% Done"],
@@ -118,14 +128,28 @@ export default function CompanyCandidateReview() {
 
 
 {/* ================= ROW 3 : DECISION CENTER ================= */}
-<div className="grid lg:grid-cols-3 gap-6">
+<div className="bg-white p-6 rounded-2xl">
+  <div className="flex justify-between mb-3">
+    <h3 className="text-md font-semibold text-gray-700">
+      Candidate List
+    </h3>  
+    <a href="/optional3/candidate-list">
+      <button className="px-2 py-1 rounded bg-red-500 hover:bg-red-600 text-white text-sm">
+        View All
+      </button>
+    </a>
+
+    
+  </div>
+  <div className="grid lg:grid-cols-3 gap-6">
 
 {/* Ready to Hire */}
-<div className="bg-white rounded-2xl p-6 shadow-sm">
+<div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
+
   <h3 className="font-semibold text-gray-700 mb-4">Ready to Hire</h3>
 
   {["Priya Mehta","Karan Singh","Riya Kapoor"].map((c,i)=>(
-    <div key={i} className="flex justify-between py-3 border-b last:border-none">
+    <div key={i} className="flex justify-between py-3 border-b border-gray-300 last:border-none">
       <span className="text-sm text-gray-500">{c}</span>
       <button className="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full">
         Hire
@@ -135,11 +159,11 @@ export default function CompanyCandidateReview() {
 </div>
 
 {/* Needs Review */}
-<div className="bg-white rounded-2xl p-6 shadow-sm">
+<div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
   <h3 className="font-semibold mb-4 text-gray-700">Needs Review</h3>
 
   {["Mohit Jain","Pooja Verma","Rahul Das"].map((c,i)=>(
-    <div key={i} className="flex justify-between py-3 border-b last:border-none">
+    <div key={i} className="flex justify-between py-3 border-b border-gray-300 last:border-none">
       <span className="text-sm text-gray-500">{c}</span>
       <span className="text-xs bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full">
         Review
@@ -149,11 +173,11 @@ export default function CompanyCandidateReview() {
 </div>
 
 {/* Rejected */}
-<div className="bg-white rounded-2xl p-6 shadow-sm">
+<div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
   <h3 className="font-semibold text-gray-700 mb-4">Not Selected</h3>
 
   {["Aakash Roy","Simran Kaur"].map((c,i)=>(
-    <div key={i} className="flex justify-between py-3 border-b last:border-none">
+    <div key={i} className="flex justify-between py-3 border-b border-gray-300 last:border-none">
       <span className="text-sm text-gray-500">{c}</span>
       <span className="text-xs bg-red-100 text-red-600 px-3 py-1 rounded-full">
         Rejected
@@ -162,6 +186,7 @@ export default function CompanyCandidateReview() {
   ))}
 </div>
 
+</div>
 </div>
 
     </div>

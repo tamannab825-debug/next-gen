@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 
 export default function RectruiterDashboard(){
 
@@ -21,22 +22,53 @@ export default function RectruiterDashboard(){
                 </div>
               </div>
 
-              <button className="px-5 py-2 bg-red-500 text-white rounded-lg">
-                Follow
-              </button>
+             <a href="/optional3/company ">
+              <button className="px-5 py-3 bg-red-500 hover:bg-red-600 text-white rounded-lg">
+                Company page
+              </button></a>
             </section>
 
             {/* Tabs */}
-            <div className="flex gap-10 p-4 bg-white  border-b border-gray-300 text-gray-800 ">
-              {["Overview", "Jobs", "Culture", "Mentorship", "Team"].map(tab => (
-                <button
-                  key={tab}
-                  className=" border-b-2  border-transparent hover:border-gray-800"
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+            
+
+<div className="flex gap-4 sm:gap-10 p-4 bg-white border-b border-gray-300 text-gray-800">
+  
+  <Link
+    href="/optional3/overview"
+    className="border-b-2 border-transparent hover:border-gray-800 pb-1"
+  >
+    Overview
+  </Link>
+
+  <Link
+    href="/optional3/job-list"
+    className="border-b-2 border-transparent hover:border-gray-800 pb-1"
+  >
+    Jobs
+  </Link>
+
+  <Link
+    href="/optional3/culture"
+    className="border-b-2 border-transparent hover:border-gray-800 pb-1"
+  >
+    Culture
+  </Link>
+
+  <Link
+    href="/optional3/mentorship"
+    className="border-b-2 border-transparent hover:border-gray-800 pb-1"
+  >
+    Mentorship
+  </Link>
+
+  <Link
+    href="/optional3/team"
+    className="border-b-2 border-transparent hover:border-gray-800 pb-1"
+  >
+    Team
+  </Link>
+
+</div>
 
           <main className="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
               <div className="lg:col-span-2 space-y-6">
@@ -51,9 +83,14 @@ export default function RectruiterDashboard(){
 
             {/* Job Openings */}
             <section className="bg-white p-6 rounded-xl">
-              <h2 className="font-semibold text-lg text-gray-600 mb-4">
+             <div className="flex justify-between  mb-4">
+               <h2 className="font-semibold text-lg text-gray-600">
                 Current Job Openings
               </h2>
+              <a href="/optional3/jobs">
+              <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All </button>
+              </a>
+             </div>
 
               {[
                 { role: "UX Designer", salary: "$1,800/mo" },
@@ -92,9 +129,14 @@ export default function RectruiterDashboard(){
 
             {/* Featured Projects */}  
             <section className="bg-white p-6 rounded-xl">
-              <h2 className="font-semibold text-gray-600 text-lg mb-4">
+              <div className="flex justify-between">
+                <h2 className="font-semibold text-gray-600 text-lg mb-4">
                 Featured Projects
               </h2>
+               <a href="/optional3/projects">
+              <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All </button>
+              </a>
+              </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 {["Mobile App Redesign", "E-Commerce Campaign"].map(p => (
@@ -122,7 +164,7 @@ export default function RectruiterDashboard(){
           {/* ========== RIGHT SIDEBAR ========== */}
           <aside className="space-y-6">
 
-            {/* Life at Company */}
+            {/* Life at Company
             <div className="bg-white p-5 -mt-6 rounded-xl">
               <div className="flex items-center gap-4">
                 <img src="/images/3.jpg.jpeg" alt="growth"  className="w-20 h-24 bg-gray-200  rounded-lg"  /> 
@@ -143,13 +185,18 @@ export default function RectruiterDashboard(){
               <div className="flex justify-end items-center mt-4 me-4 border-t border-gray-300">
                     <button className="text-white-300 rounded mt-2 text-sm bg-red-500 hover:bg-red-600 px-5 py-2">View More  </button>
                   </div>
-            </div>
+            </div> */}
 
             {/* Mentorship */}
-            <div className="bg-white p-5 rounded-xl">
-              <h3 className="font-semibold text-gray-600 mb-4">
+            <div className="bg-white p-5 -mt-6 rounded-xl">
+              <div className="flex justify-between">
+                <h3 className="font-semibold text-gray-600 mb-4">
                 Mentorship Opportunities
               </h3>
+               <a href="/optional3/mentorship">
+              <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All </button>
+              </a>
+              </div>
 
               {["Sarah Lee", "Jake Roberts"].map(name => (
                 <div key={name} className="flex gap-5 mb-5">
@@ -178,7 +225,9 @@ export default function RectruiterDashboard(){
               <img src="/images/12.jpg.jpeg" alt="" className="h-30 bg-gray-100 rounded mt-3" />
 
                <div className="flex justify-end items-center mt-4 me-4 border-t border-gray-300">
+                   <a href="/optional3/analytics">
                     <button className="text-white-300 rounded mt-2 text-sm bg-red-500 hover:bg-red-600 px-5 py-2">View Report  </button>
+                    </a>
                   </div>
             </div>
 

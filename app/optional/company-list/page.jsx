@@ -70,13 +70,17 @@ export default function CompanyListPage() {
                 <p>Open Jobs: {c.jobs}</p>
               </div>
 
-              <div className="flex gap-2 mt-4">
-                <button className="flex-1 text-sm border border-red-500 text-red-500 py-2 rounded-lg hover:bg-red-500 hover:text-white">
+              <div className="flex gap-3 mt-4">
+                <a href="/optional/companyProfile">
+                  <button className="flex-1 text-sm border border-red-500 text-red-500 p-2 rounded-lg hover:bg-red-500 hover:text-white">
                   View Company
                 </button>
-                <button className="flex-1 text-sm bg-gray-100 rounded-lg hover:bg-gray-200">
+                </a>
+               <a href="/optional/companyJob">
+                 <button className="flex-1 text-sm bg-gray-100 rounded-lg p-2.5 hover:bg-gray-200">
                   Jobs
                 </button>
+               </a>
               </div>
 
             </div>

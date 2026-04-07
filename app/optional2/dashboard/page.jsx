@@ -22,9 +22,11 @@ export default function CandidateMainContent() {
 
   <p className="text-sm text-gray-400 mt-4">Skill Level</p>
 
-  <button className="mt-4 px-4 py-2 rounded-lg bg-linear-to-r from-red-600 to-blue-400 hover:from-red-700 hover:to-blue-500  text-white text-sm">
+  <a href="/optional2/skills">
+  <button className="mt-4 px-4 py-2 rounded-lg bg-red-500 hover:bg-red-600  text-white text-sm">
     View Details
   </button>
+  </a>
 </div>
 
 {/* ===== AI COACH ===== */}
@@ -47,7 +49,9 @@ export default function CandidateMainContent() {
    
   </div>
    <div className="flex justify-end items-center mt-6 me-4 border-t border-gray-300">
-     <button className="text-white-300 rounded mt-2 text-sm bg-linear-to-r from-red-600 to-blue-400 hover:from-red-700 hover:to-blue-500 px-3 py-1">View More  </button>
+     <a href="/optional2/AI-coach">
+      <button className="text-white-300 rounded mt-2 text-sm bg-red-500 hover:bg-red-600  px-3 py-1">View More  </button>
+     </a>
      </div>
 </div>
 
@@ -71,7 +75,9 @@ export default function CandidateMainContent() {
    </div>
  </div>
 <div className="border-t border-gray-300"></div>
+  <a href="/optional2/notification">
   <button className="text-red-500   text-sm mt-2">View All</button>
+  </a>
 </div>
 
 </div>
@@ -82,7 +88,9 @@ export default function CandidateMainContent() {
     <div className="bg-white rounded-2xl p-6 shadow-sm">
   <div className="flex justify-between mb-4">
     <h3 className="font-semibold text-gray-600">Project Portfolio</h3>
+   <a href="/optional2/project">
     <button className="text-red-500 text-sm">Add New Project +</button>
+    </a>
   </div>
 
               <div className="grid md:grid-cols-3 gap-4">
@@ -94,10 +102,10 @@ export default function CandidateMainContent() {
                     <h3 className="font-semibold text-gray-500">{p}</h3>
                    <div className="">
                     <button className="text-red-400 rounded mt-3 text-sm bg-red-100 hover:bg-red-400 hover:text-white px-2 py-1 me-3">UI Design</button>
-                    <button className="text-white rounded mt-3 text-sm bg-red-500 hover:bg-red-600 px-3 py-1">Trial</button>
+                    <button className="text-white rounded mt-3 text-sm bg-red-400 hover:bg-red-500 px-3 py-1">Trial</button>
                    </div>
                    <div className="flex justify-end items-center mt-6 me-4 border-t border-gray-300">
-                    <button className="text-white-300 rounded mt-2 text-sm bg-linear-to-r from-red-600 to-blue-400 hover:from-red-600 hover:to-blue-400 px-3 py-1">View More  </button>
+                    <button className="text-red-600 border rounded mt-2 text-sm bg-white hover:bg-red-600 hover:text-white px-3 py-1">View More  </button>
                   </div>
                   </div>   
                 ))}
@@ -183,7 +191,9 @@ export default function CandidateMainContent() {
 
   <img src="/images/12.jpg.jpeg" alt="" className="h-40  rounded-xl flex items-center justify-center text-gray-400"/>
 
+  <a href="/optional2/networking">
   <button className="mt-4 text-red-500 text-sm">Explore All</button>
+  </a>
 </div>
 
 {/* ===== ACTIVITY ===== */}

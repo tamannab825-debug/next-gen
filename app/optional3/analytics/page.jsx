@@ -152,9 +152,11 @@ export default function CompanyAnalyticsPage() {
           Hiring activity by role
         </p>
       </div>
+      <a href="/optional3/job-performance">
       <button className="text-sm text-red-500 font-medium hover:underline">
         View details
       </button>
+      </a>
     </div>
 
     <div className="divide-y">
@@ -223,9 +225,11 @@ export default function CompanyAnalyticsPage() {
 
     </div>
 
+    <a href="/optional3/full-report">
     <button className="w-full bg-red-500 text-white py-2 rounded-xl hover:bg-red-600 transition">
       View Full Report
     </button>
+    </a>
   </div>
 
 </div>

@@ -30,9 +30,11 @@ export default function CompanyPage() {
 
     {/* actions */}
     <div className="flex gap-4 pt-3">
-      <button className="bg-red-500 text-white px-5 py-2 rounded-lg text-sm hover:bg-red-600 transition">
+      <a href="/optional3/job-list">
+        <button className="bg-red-500 text-white px-5 py-2 rounded-lg text-sm hover:bg-red-600 transition">
         View Open Jobs
       </button>
+      </a>
       <button className="border border-gray-200 px-5 py-2 rounded-lg text-sm hover:bg-gray-50 transition">
         Company Profile
       </button>
@@ -88,9 +90,10 @@ export default function CompanyPage() {
 
     <div className="flex justify-between items-center mb-6">
       <h3 className="font-semibold text-gray-900">Open Job Positions</h3>
+      <a href="/optional3/jobs">
       <span className="text-sm text-red-500 font-medium cursor-pointer">
         View All →
-      </span>
+      </span></a>
     </div>
 
     <div className="space-y-4">

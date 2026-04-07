@@ -23,7 +23,8 @@ export default function RoleSelectPage() {
         </div>
 
         {/* ================= ROLE CARDS ================= */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* changed to 4 columns for better balance */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Candidate */}
           <Link
@@ -42,8 +43,7 @@ export default function RoleSelectPage() {
               </h3>
 
               <p className="text-sm text-gray-500 leading-relaxed">
-                Prove your skills through real job trials, get AI feedback,
-                and land jobs faster without resume bias.
+                Prove your skills through real job trials and get hired faster.
               </p>
 
               <span className="inline-block mt-4 text-sm text-red-500 font-medium">
@@ -69,8 +69,7 @@ export default function RoleSelectPage() {
               </h3>
 
               <p className="text-sm text-gray-500 leading-relaxed">
-                Post roles, assign skill trials, evaluate real performance,
-                and hire top talent with confidence.
+                Hire talent using real-world skill evaluation.
               </p>
 
               <span className="inline-block mt-4 text-sm text-red-500 font-medium">
@@ -96,8 +95,33 @@ export default function RoleSelectPage() {
               </h3>
 
               <p className="text-sm text-gray-500 leading-relaxed">
-                Manage pipelines, track trials, collaborate with companies,
-                and close hiring faster.
+                Manage hiring pipelines and track candidate performance.
+              </p>
+
+              <span className="inline-block mt-4 text-sm text-red-500 font-medium">
+                Continue →
+              </span>
+            </div>
+          </Link>
+
+          {/* ✅ NEW: Institute */}
+          <Link
+            href="/institute/dashboard"
+            className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-red-50 opacity-0 group-hover:opacity-100 transition" />
+
+            <div className="relative z-10 space-y-4">
+              <div className="w-14 h-14 rounded-2xl bg-red-100 text-red-500 flex items-center justify-center text-2xl">
+                🎓
+              </div>
+
+              <h3 className="text-xl font-semibold text-gray-900 group-hover:text-red-600">
+                Institute
+              </h3>
+
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Manage students, track learning progress, and boost placements.
               </p>
 
               <span className="inline-block mt-4 text-sm text-red-500 font-medium">

@@ -78,7 +78,10 @@ export default function CompanyJobTrialPage() {
 
 {/* Active Job Trials */}
 <div className="bg-white rounded-2xl p-6 shadow-sm">
-  <h3 className="font-semibold text-gray-700 mb-4">Active Job Trials</h3>
+  <div className="flex justify-between  mb-4">
+    <h3 className="font-semibold text-gray-700">Active Job Trials</h3>
+    <button className="px-2 py-1 bg-red-500 text-white text-sm hover:bg-red-600 rounded">View All</button>
+  </div>
 
   {[
     ["Frontend Challenge","32 Candidates"],
@@ -134,7 +137,14 @@ export default function CompanyJobTrialPage() {
 
 {/* Top Performing Candidates */}
 <div className="bg-white rounded-2xl p-6 shadow-sm">
-  <h3 className="font-semibold text-gray-700 mb-4">Top Performers</h3>
+ <div className="flex justify-between mb-4">
+   <h3 className="font-semibold text-gray-700 ">Top Performers</h3>
+  <a href="/optional3/top-performer">
+   <button className="px-2 py-1 bg-red-500 text-white hover:bg-red-600 rounded text-sm">
+    View All
+   </button>
+   </a>
+ </div>
 
   {[
     ["Aman Sharma","92%"],

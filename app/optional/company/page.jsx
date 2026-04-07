@@ -82,7 +82,7 @@ export default function CompanyPage() {
       {companies.map((c, i) => (
         <div key={i}
          className="bg-white  text-center rounded-xl p-5 text- shadow-sm hover:shadow-md">
-         <img src="images/photo" alt="" className="w-12 h-12 bg-gray-200  rounded-lg mx-auto mb-3 text-center" />
+         <img src="/images/company.jfif" alt="company" className="w-12 h-12 bg-gray-200  rounded-lg mx-auto mb-3 text-center" />
 
           <div className="">
             <h4 className="font-semibold">{c.name}</h4>

@@ -26,7 +26,7 @@ export default function AnalyticsPage() {
   const [filter, setFilter] = useState("");
 
   return (
-    <div className="min-h-screen bg-[#f5f7fb] p-6 space-y-6 text-gray-800">
+    <div className="min-h-screen bg-[#f5f7fb] p-5 space-y-6 text-gray-800">
 
 {/* ===== HEADER ===== */}
 {/* <div className="bg-white rounded-2xl p-4 shadow-sm flex flex-col lg:flex-row justify-between gap-4">
@@ -105,7 +105,7 @@ export default function AnalyticsPage() {
              </div>
             </div>
 
-            <div className="mb-3 flex gap-12">
+            <div className="mb-3 flex gap-4">
               <div className="flex gap-2">
                 <button className="rounded-full w-2 h-2 bg-green-500" > .</button>
               <p className="text-gray-500 -mt-2">Apllication sent</p>
@@ -137,7 +137,12 @@ export default function AnalyticsPage() {
 
            {/* LOCATIONS */}
         <div className="bg-white rounded-xl p-5 shadow-sm">
-         <h3 className="font-semibold mb-3">Top Locations</h3>
+         <div className="flex justify-between  mb-3">
+          <h3 className="font-semibold">Top Locations</h3>
+          <a href="/optional/location">
+            <button className="px-3 py-1 bg-red-500 hover:bg-red-600 text-sm text-white rounded-lg">View</button>
+          </a>
+         </div>
 
           {["Bangalore", "Delhi NCR", "Mumbai"].map((c, i) => (
           <div key={i} className="flex justify-between text-sm mb-2">
@@ -210,7 +215,14 @@ export default function AnalyticsPage() {
 
 {/* TOP COMPANIES */}
 <div className="bg-white rounded-xl p-6 shadow-sm">
-  <h2 className="font-semibold mb-4">Top Hiring Companies</h2>
+  <div className="flex justify-between mb-4">
+    <h2 className="font-semibold ">Top Hiring Companies</h2>
+    <a href="">
+      <button className="px-3 py-1 bg-red-500 hover:bg-red-600 text-sm text-white rounded-lg">
+        View All
+      </button>
+    </a>
+  </div>
 
   <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
     {topCompanies.map((c, i) => (

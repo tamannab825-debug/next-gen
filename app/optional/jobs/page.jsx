@@ -103,7 +103,7 @@ export default function SearchJobsPage() {
           <input
             type="text"
             placeholder="Search job title here..."
-            className="w-full lg:flex-1 rounded-lg px-4 py-3 text-sm border focus:outline-none focus:ring-1 focus:ring-red-400"
+            className="w-full lg:flex-1 rounded-lg px-4 py-3 text-sm text-gray-500 border border-gray-100 focus:outline-none focus:ring-1 focus:ring-red-400"
           />
 
           <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full text-sm font-medium flex items-center justify-center gap-2">

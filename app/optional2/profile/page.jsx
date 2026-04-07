@@ -92,9 +92,14 @@ export default function CandidateProfile() {
      
      {/* Project */}
     <div className="bg-white rounded-xl shadow-md p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            <div className="flex justify-between  mb-4">
+              <h2 className="text-xl font-semibold text-gray-800">
               Projects
             </h2>
+              <a href="/optional2/project">
+      <button className="px-3 py-1 rounded-lg bg-red-500 hover:bg-red-600 text-sm text-white">View All</button>
+      </a>
+            </div>
 
           <div className="space-y-4">
            <div>
@@ -128,7 +133,12 @@ export default function CandidateProfile() {
 
     {/*Experience  */}
       <section className="bg-white rounded-3xl p-6 shadow-sm">
-     <h2 className="font-semibold mb-4">Experience</h2>
+     <div className="flex justify-between mb-4">
+      <h2 className="font-semibold ">Experience</h2>
+      <a href="/optional2/experience">
+      <button className="px-3 py-1 rounded-lg bg-red-500 hover:bg-red-600 text-sm text-white">View</button>
+      </a>
+     </div>
 
      <div className="border-l-2 border-red-500 pl-4 space-y-4">
 

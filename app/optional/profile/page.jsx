@@ -22,8 +22,12 @@ export default function MyProfilePage() {
          
            {/* Stats */}
           <div className="absolute right-6 bottom-6 flex gap-3">
-            <StatBox value="245" label="Following" />
-            <StatBox value="872" label="Followers" />
+            <a href="/optional/following">
+              <StatBox value="245" label="Following" />
+            </a>
+           <a href="/optional/followers">
+             <StatBox value="872" label="Followers" />
+           </a>
             <button className="bg-red-500 text-white px-4 py-2 rounded-lg text-sm">
               Update Profile
             </button>

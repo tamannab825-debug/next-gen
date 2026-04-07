@@ -1,10 +1,11 @@
 // App.jsx
 import React from "react";
-
+import Link from "next/link";
 
 const sections = [
   {
     title: "Dashboard / Overview",
+    link: "/optional3/dashboard",
     items: [
       "Total Employees: 250",
       "Active Projects: 12",
@@ -15,38 +16,47 @@ const sections = [
   },
   {
     title: "User / Employee Management",
+    link: "/optional3/user-management",
     items: ["Manage Users", "Add / Edit Employee", "Roles & Status", "Search Users"],
   },
   {
     title: "Roles & Permissions",
+    link: "/optional3/permission",
     items: ["Manage Roles", "Set Permissions", "Audit Trail"],
   },
   {
     title: "Company Profile & Settings",
+    link: "/optional3/company",
     items: ["Company Info", "Contact Details", "Branding Settings"],
   },
   {
     title: "Project / Task Management",
+    link: "/optional3/projects",
     items: ["Manage Projects", "Assign Tasks", "Track Progress"],
   },
   {
     title: "Finance / Billing",
+    link: "/optional3/finance",
     items: ["Subscription Plan", "Invoices & Payments", "Billing History"],
   },
   {
     title: "Reports & Analytics",
+    link: "/optional3/analytics",
     items: ["Activity Reports", "Project Stats", "Export Reports"],
   },
   {
     title: "Notifications & Communication",
+    link: "/optional3/notification",
     items: ["System Alerts", "Announcements", "Message Center"],
   },
   {
     title: "Security & Audit Logs",
+    link: "/optional3/security",
     items: ["Login History", "Activity Logs", "Security Settings"],
   },
   {
     title: "Support & Help",
+    link: "/optional3/support",
     items: ["Help Center", "Submit Ticket", "Contact Support"],
   },
 ];
@@ -78,14 +88,19 @@ export default function App() {
                 </ul>
               </div>
 
-              <div className="mt-3 flex justify-between items-center">
-                <button className="bg-red-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-red-600 transition">
-                  View Details
-                </button>
-                <button className="border border-gray-300 px-3 py-1 rounded-lg text-sm hover:bg-red-400 hover:border-none hover:text-white transition">
-                  Manage
-                </button>
-              </div>
+            <div className="mt-3 flex justify-between items-center">
+
+  <Link href={section.link}>
+    <button className="bg-red-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-red-600 transition">
+      View Details
+    </button>
+  </Link>
+
+  <button className="border border-gray-300 px-3 py-1 rounded-lg text-sm hover:bg-red-400 hover:border-none hover:text-white transition">
+    Manage
+  </button>
+
+</div>
 
               <img src="/images/6.jpg.jpeg" alt="" className="mt-2 h-34 bg-gray-100 rounded-lg  flex items-center justify-center text-gray-400 text-sm" />
             </div>
@@ -105,9 +120,11 @@ export default function App() {
               <li>Server maintenance scheduled</li>
               <li>New admin added</li>
             </ul>
-            <button className="mt-3 bg-yellow-500 text-white py-1 rounded-lg text-sm hover:bg-yellow-600 transition">
+           <Link href="/optional3/notification">
+           <button className="mt-3 w-full bg-yellow-500 text-white py-1 rounded-lg text-sm hover:bg-yellow-600 transition">
               View All
             </button>
+           </Link>
           </div>
 
           {/* Reports / Quick Stats */}
@@ -129,9 +146,11 @@ export default function App() {
                 <p className="font-semibold text-red-500">5</p>
               </div>
             </div>
-            <button className="mt-3 bg-green-500 text-white py-1 rounded-lg text-sm hover:bg-green-600 transition">
+           <Link href="/optional3/full-report">
+           <button className="mt-3 w-full bg-green-500 text-white py-1 rounded-lg text-sm hover:bg-green-600 transition">
               Export Reports
             </button>
+            </Link>
           </div>
 
           {/* Quick Links */}
@@ -145,9 +164,13 @@ export default function App() {
               <li>View Analytics</li>
               <li>Settings</li>
             </ul>
-            <button className="mt-3 bg-purple-500 text-white py-1 rounded-lg text-sm hover:bg-purple-600 transition">
-              Go to Panel
-            </button>
+           
+
+            <Link href="/optional3/dashboard">
+                 <button className="mt-3 w-full bg-purple-500 text-white py-1 rounded-lg text-sm hover:bg-purple-600 transition">
+                 Go to Panel
+                </button>
+           </Link>
           </div>
         </div>
       </div>

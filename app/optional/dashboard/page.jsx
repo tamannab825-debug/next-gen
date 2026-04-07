@@ -89,13 +89,13 @@ const activities = [
 
 export default function DashboardPage() {
   return (
-    <div className="p-6 bg-[#f5f6fa] min-h-screen space-y-6">
+    <div className="p-6 bg-[#f5f6fa] min-h-screen   space-y-6">
 
       {/* ================= TOP SECTION ================= */}
       <div className="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
         
         {/* ---------------- LEFT COLUMN ---------------- */}
-        <div className="lg:w-1/2 space-y-6">
+        <div className="lg:w-1/2  space-y-6">
           {/* Stats Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
   {stats.map((item, i) => (
@@ -146,7 +146,7 @@ export default function DashboardPage() {
              </div>
             </div>
 
-            <div className="mb-3 flex gap-12">
+            <div className="mb-3 flex gap-4">
               <div className="flex gap-2">
                 <button className="rounded-full w-2 h-2 bg-green-500" > .</button>
               <p className="text-gray-500 -mt-2">Apllication sent</p>
@@ -226,7 +226,9 @@ export default function DashboardPage() {
   </div>
 
   <div className="mt-5 w-30 mx-auto">
-    <button className="my-4 border border-red-500 text-red-500 hover:bg-red-600 hover:text-white px-4 py-2 rounded-xl">View More</button>
+    <a href="/optional/company-list">
+      <button className="my-4 border border-red-500 text-red-500 hover:bg-red-600 hover:text-white px-4 py-2 rounded-xl">View More</button>
+    </a>
   </div>
 </div>
 
@@ -260,9 +262,11 @@ export default function DashboardPage() {
         </div>
 
         {/* Update Button */}
-        <button className="px-4 py-3 text-sm rounded-md bg-red-500 text-white hover:bg-red-700 transition">
+        <a href="/optional/profile">
+          <button className="px-4 py-3 text-sm rounded-md bg-red-500 text-white hover:bg-red-700 transition">
           Update Profile
         </button>
+        </a>
       </div>
 
       {/* Skills + Chart Columns */}
@@ -344,7 +348,8 @@ export default function DashboardPage() {
       </div>
 
       <div className="mt-5 w-30 mx-auto">
-    <button className="my-4 border border-red-500 text-red-500 hover:bg-red-600 hover:text-white px-4 py-2 rounded-xl">View More</button>
+   <a href="/optional/activity">
+    <button className="my-4 border border-red-500 text-red-500 hover:bg-red-600 hover:text-white px-4 py-2 rounded-xl">View More</button></a>
   </div>
     </div>
 
@@ -352,9 +357,17 @@ export default function DashboardPage() {
 
      <div className="bg-white rounded-xl shadow-sm p-6">
       {/* Header */}
-      <h3 className="text-lg font-semibold text-gray-800 mb-5">
-       Available Jobs For You 
+     <div className="flex justify-between  mb-5">
+       <h3 className="text-lg font-semibold text-gray-800">
+       Available Jobs 
       </h3>
+
+      <a href="/optional/jobs">
+        <button className="px-3 py-2 rounded-lg bg-red-500 hover:bg-red-600 text-sm text-white">
+          View All
+        </button>
+      </a>
+     </div>
 
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -394,9 +407,16 @@ export default function DashboardPage() {
         {/* Network */}
         <div className="bg-white rounded-xl shadow-sm p-6">
       {/* Header */}
-      <h3 className="text-lg font-semibold text-gray-800 mb-5">
+     <div className="flex justify-between mb-5">
+       <h3 className="text-lg font-semibold text-gray-800 ">
         Network
       </h3>
+      <a href="/optional/network">
+        <button className="px-3 py-2 bg-red-500 hover:bg-red-600 text-sm text-white rounded-lg">
+          Full View
+        </button>
+      </a>
+     </div>
 
       {/* Boxes */}
       <div className="grid grid-cols-3 gap-4">

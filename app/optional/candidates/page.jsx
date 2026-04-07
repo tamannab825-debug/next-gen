@@ -78,9 +78,17 @@ export default function CandidatesPage() {
         
         {/* Demand list */}
         <div className="md:col-span-2 bg-white rounded-xl p-6 shadow-sm border">
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">
+         <div className="flex justify-between  mb-5">
+           <h2 className="text-lg font-semibold text-gray-900">
             High Demand Skills
           </h2>
+
+          <a href="/optional/skills">
+            <button className="px-3 py-1 bg-red-500 hover:bg-red-600 text-sm text-white rounded-lg">
+              View All
+            </button>
+          </a>
+         </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
             {skillDemand.map((s, i) => (
@@ -129,9 +137,11 @@ export default function CandidatesPage() {
               </h4>
               <p className="text-sm text-gray-500">{c.role}</p>
               <p className="text-xs text-gray-400 mt-1">{c.exp} experience</p>
-              <button className="mt-4 w-full bg-red-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-red-600">
+              <a href="/optional/candidate-profile">
+                <button className="mt-4 w-full bg-red-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-red-600">
                 View Profile
               </button>
+              </a>
             </div>
           ))}
         </div>
@@ -148,9 +158,11 @@ export default function CandidatesPage() {
             Explore the top-rated candidates trending this week.
           </p>
 
-          <button className="mt-4 text-red-500 text-sm font-medium hover:underline">
+          <a href="/optional/candidate-list">
+            <button className="mt-4 text-red-500 text-sm font-medium hover:underline">
             Explore Profiles →
           </button>
+          </a>
         </div>
 
         <div className="bg-white rounded-xl p-6 border shadow-sm">
@@ -161,9 +173,11 @@ export default function CandidatesPage() {
             See companies actively hiring candidates like you.
           </p>
 
-          <button className="mt-4 text-red-500 text-sm font-medium hover:underline">
+         <a href="/optional/company-list ">
+           <button className="mt-4 text-red-500 text-sm font-medium hover:underline">
             View Companies →
           </button>
+         </a>
         </div>
 
       </div>

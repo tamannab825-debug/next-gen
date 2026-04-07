@@ -28,12 +28,12 @@ export default function CandidateLayout({ children }) {
         <div className=" m-2 flex justify-center">
           <button className="px-6 py-4 flex items-center gap-3 w-60 bg-gray-100 rounded-xl">
           <img
-            src="/images/profile.jpg"
+            src="/images/company.jfif"
             className="w-10 h-10 rounded-full"
           />
           <div>
-            <p className="text-sm font-semibold">Franklin Jr</p>
-            <p className="text-xs text-gray-500">Superadmin</p>
+            <p className="text-sm text-gray-400 font-semibold">N5X</p>
+            <p className="text-xs text-gray-500">Company</p>
             </div>
           
         </button>
@@ -43,7 +43,7 @@ export default function CandidateLayout({ children }) {
         <nav className="px-4 py-4 text-gray-400 space-y-1 overflow-y-auto">
           <SidebarLink  title="Dashboard" href="/optional3/dashboard" pathname={pathname} Icon={LayoutDashboard} />
           <SidebarLink title="Candidates" href="/optional3/candidate" pathname={pathname} Icon={ IdCardLanyard}  />
-          <SidebarLink title="Comapany Page" href="/optional3/company" pathname={pathname} Icon={StickyNote} />
+          <SidebarLink title="Company Page" href="/optional3/company" pathname={pathname} Icon={StickyNote} />
           <SidebarLink title="Analytics" href="/optional3/analytics" pathname={pathname} Icon={ChartPie}  />
           <SidebarLink title="Job Trials" href="/optional3/job-trial" pathname={pathname} Icon={BriefcaseBusiness} />
           <SidebarLink title="Company Admin" href="/optional3/admin" pathname={pathname} Icon={UserStar} />

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { LayoutDashboard, IdCardLanyard, StickyNote, UserStar, BriefcaseBusiness, ChartPie } from "lucide-react";
+import { LayoutDashboard, IdCardLanyard, StickyNote, UserStar, BriefcaseBusiness, ChartPie, ListCheck , ListPlus, } from "lucide-react";
 
 export default function CandidateLayout({ children }) {
   const [open, setOpen] = useState(false);
@@ -32,8 +32,8 @@ export default function CandidateLayout({ children }) {
             className="w-10 h-10 rounded-full"
           />
           <div>
-            <p className="text-sm font-semibold">Franklin Jr</p>
-            <p className="text-xs text-gray-500">Superadmin</p>
+            <p className="text-sm text-gray-400 font-semibold">Franklin Jr</p>
+            <p className="text-xs text-gray-500">Recruiter</p>
             </div>
           
         </button>
@@ -47,6 +47,8 @@ export default function CandidateLayout({ children }) {
           <SidebarLink title="Profile" href="/optional/profile" pathname={pathname} Icon={StickyNote}/>
           <SidebarLink title="Company Admin" href="/optional/company-admin" pathname={pathname} Icon={UserStar} />
           <SidebarLink title="Jobs" href="/optional/jobs" pathname={pathname} Icon={ BriefcaseBusiness}/>
+          <SidebarLink title="Company-List" href="/optional/company-list" pathname={pathname} Icon={ListCheck}/>
+          <SidebarLink title="Candidate-List" href="/optional/candidate-list" pathname={pathname} Icon={ListPlus}/>
         </nav>
       </aside>
 

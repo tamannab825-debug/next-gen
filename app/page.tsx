@@ -34,25 +34,46 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-16 grid lg:grid-cols-2 gap-12 items-center">
         
-        <div>
-          <h1 className="text-4xl font-semibold leading-tight text-gray-900">
-            Skill Based Hiring <br />
-            Made Simple & Fast
+       <div>
+          <h1 className="text-4xl font-bold leading-tight text-gray-900">
+            The Future of <span className="text-red-500">Skill-Based Hiring</span>
           </h1>
 
-          <p className="text-gray-500 mt-5 max-w-lg">
-            A modern recruitment platform where candidates prove skills,
-            companies hire smarter, and recruiters move faster — all in one place.
+          <p className="text-gray-500 mt-6 text-md max-w-lg">
+            Connect candidates, companies, recruiters, and institutes on one powerful platform. 
+            Hire smarter, learn faster, and grow together.
           </p>
 
           <div className="flex gap-4 mt-8">
-            <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-xl text-sm font-medium transition">
+            <Link
+              href="/auth/signup"
+              className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-xl text-sm font-medium shadow-md transition"
+            >
               Get Started
-            </button>
+            </Link>
 
-            <button className="bg-white border border-gray-200 px-6 py-3 rounded-xl text-sm font-medium hover:shadow transition">
+            <Link
+              href="/auth/login"
+              className="bg-white border px-6 py-3 rounded-xl text-sm hover:shadow transition"
+            >
               Login
-            </button>
+            </Link>
+          </div>
+
+          {/* Stats */}
+          <div className="flex gap-8 mt-10 text-sm text-gray-600">
+            <div>
+              <p className="text-2xl font-semibold text-gray-900">10K+</p>
+              Users
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-gray-900">500+</p>
+              Companies
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-gray-900">120+</p>
+              Institutes
+            </div>
           </div>
         </div>
 
@@ -63,7 +84,7 @@ export default function HomePage() {
       {/* ================= ROLE SELECTION ================= */}
       <section className="px-8 pb-20">
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
           {/* Candidate */}
           <Link
@@ -110,6 +131,22 @@ export default function HomePage() {
             </h3>
             <p className="text-sm text-gray-500 mt-2">
               Manage candidates, trials, and hiring pipelines easily.
+            </p>
+          </Link>
+
+           {/* Institute */}
+          <Link
+            href="/auth/signup"
+            className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition group"
+          >
+            <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-500 text-xl mb-4">
+            🎓
+            </div>
+            <h3 className="font-semibold text-lg group-hover:text-red-500">
+              I’m an Institute
+            </h3>
+            <p className="text-sm text-gray-500 mt-2">
+              Train & place students
             </p>
           </Link>
 

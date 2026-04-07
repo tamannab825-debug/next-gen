@@ -159,7 +159,12 @@ export default function CompanyAdminDashboard() {
 {/* ================= PERFORMANCE SNAPSHOT ================= */}
 <div className="bg-white rounded-3xl p-6 shadow-sm">
 
-<h2 className="font-semibold text-gray-800 mb-6">Performance Snapshot</h2>
+<div className="flex justify-between mb-6">
+  <h2 className="font-semibold text-gray-800">Performance Snapshot</h2>
+  <a href="/optional/performance">
+    <button className="px-4 py-1 bg-red-500 hover:bg-red-600 rounded-lg text-sm text-white ">View</button>
+  </a>
+</div>
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
