@@ -132,4 +132,3 @@ function ContactItem({ label, value }) {
     </div>
   );
 }
-

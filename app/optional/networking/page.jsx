@@ -46,7 +46,7 @@ export default function NetworkPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search here..."
-            className="flex-1 px-4 py-2 text-sm border border-red-300 text-red-500 outline-none"
+            className="flex-1 px-4 py-2 text-sm  outline-none"
           />
           <button className="bg-red-500  text-white  px-5 text-sm hover:bg-red-600 ">
             Search
@@ -62,22 +62,13 @@ export default function NetworkPage() {
 
         {/* LEFT – PEOPLE */}
         <div className="col-span-12 lg:col-span-4 bg-white rounded-xl p-5 shadow-sm">
-          <div className="flex justify-between mb-4">
-            <h3 className="font-semibold text-gray-800 ">
+          <h3 className="font-semibold text-gray-800 mb-4">
             Suggested People
           </h3>
 
-          <a href="/optional2/people">
-          <button className="px-2 py-1 rounded-xl bg-red-500 hover:bg-red-600 text-white text-sm">
-            View All
-          </button>
-          </a>
-
-          </div>
-
           {people.map((p, i) => (
             <div key={i} className="flex items-center gap-3 py-3 border-b last:border-0">
-              <img src="/images/profile.jpg" alt="" className="w-10 h-10 rounded-full bg-gray-200" />
+              <img src="images/profile" alt="" className="w-10 h-10 rounded-full bg-gray-200" />
               <div className="flex-1">
                 <p className="text-sm font-medium text-gray-800">{p.name}</p>
                 <p className="text-xs text-gray-500">{p.role}</p>
@@ -104,11 +95,9 @@ export default function NetworkPage() {
                 {f.count}
               </p>
               <div className="border-t mt-3 pt-3">
-                <a href="/optional2/fields">
                 <button className="text-red-500 text-sm hover:underline">
                   View Network →
                 </button>
-                </a>
               </div>
             </div>
           ))}
@@ -126,7 +115,7 @@ export default function NetworkPage() {
             <div key={i} className="py-3 border-b last:border-0">
               <div className="flex items-center gap-3">
                 <div className="">
-                    <img src="/images/company.jfif" alt="" className="bg-gray-100 rounded-full w-14 h-14 object-contain" />
+                    <img src="images/logo" alt="" className="bg-gray-100 rounded-full w-14 h-14 object-contain" />
 
                 </div>
                 <div className="">
@@ -141,11 +130,9 @@ export default function NetworkPage() {
             </div>
           ))}
 
-          <a href="/optional2/companies">
           <button className="mt-4 w-full border border-red-500 text-red-500 py-2 rounded-xl hover:bg-red-500 hover:text-white text-sm">
             View All Companies
           </button>
-          </a>
         </div>
 
       </div>
@@ -172,11 +159,9 @@ export default function NetworkPage() {
           <p className="text-sm text-gray-500">
             Engineering roles dominate this month.
           </p>
-          <a href="/optional2/sector">
           <button className="mt-4 text-red-500 text-sm hover:underline">
             Explore Now →
           </button>
-          </a>
         </div>
 
       </div>

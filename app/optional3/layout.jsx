@@ -121,4 +121,3 @@ function SidebarLink({ title, href, pathname, Icon }) {
     </Link>
   );
 }
-
