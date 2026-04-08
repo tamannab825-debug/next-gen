@@ -54,18 +54,7 @@ const programs = [
   },
 ];
 
-export default function InstitutePrograms() {
-  const [search, setSearch] = useState("");
-
-  const filtered = programs.filter((p) =>
-    p.title.toLowerCase().includes(search.toLowerCase())
-  );
-
-  const active = filtered.filter((p) => p.status === "Active");
-  const ongoing = filtered.filter((p) => p.status === "Ongoing");
-  const completed = filtered.filter((p) => p.status === "Completed");
-
-  const Column = ({ title, data }) => (
+ const Column = ({ title, data }) => (
     <div className="bg-white rounded-xl p-4 ">
 
       <h2 className="font-semibold text-gray-700 mb-4">
@@ -111,6 +100,19 @@ export default function InstitutePrograms() {
 
     </div>
   );
+
+export default function InstitutePrograms() {
+  const [search, setSearch] = useState("");
+
+  const filtered = programs.filter((p) =>
+    p.title.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const active = filtered.filter((p) => p.status === "Active");
+  const ongoing = filtered.filter((p) => p.status === "Ongoing");
+  const completed = filtered.filter((p) => p.status === "Completed");
+
+ 
 
   return (
     <div className="p-6 bg-[#f5f6fa] min-h-screen">

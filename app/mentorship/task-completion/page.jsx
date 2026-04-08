@@ -186,7 +186,7 @@ export default function TasksPage() {
           </h3>
 
           <div className="space-y-3 text-gray-600 text-sm">
-            <p>Ravi completed "React Dashboard"</p>
+            <p>{`Ravi completed "React Dashboard"`}</p>
             <p>Ananya updated API Integration</p>
             <p>Rahul assigned new task</p>
           </div>

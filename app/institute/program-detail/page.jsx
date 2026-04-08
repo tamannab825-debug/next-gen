@@ -193,7 +193,7 @@ export default function ProgramDetailsPage() {
 
             <div className="space-y-3 text-sm text-gray-600">
               <p>📌 New student enrolled</p>
-              <p>📌 Module "React" updated</p>
+              <p>{`📌 Module "React" updated`}</p>
               <p>📌 Assignment uploaded</p>
             </div>
           </div>

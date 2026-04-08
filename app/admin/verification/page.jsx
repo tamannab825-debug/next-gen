@@ -34,9 +34,7 @@ const companies = [
   },
 ];
 
-export default function CompanyVerification() {
-  const [company, setCompany] = useState(companies[0]);
-  const Info = ({ label, value }) => (
+const Info = ({ label, value }) => (
   <div className="flex justify-between gap-4">
     <span className="text-gray-500">{label}</span>
     <span className="font-medium text-gray-800 text-right truncate">
@@ -44,6 +42,10 @@ export default function CompanyVerification() {
     </span>
   </div>
 );
+
+export default function CompanyVerification() {
+  const [company, setCompany] = useState(companies[0]);
+  
 
   return (
     <div className="space-y-8">

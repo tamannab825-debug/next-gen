@@ -63,7 +63,7 @@ export default function SessionsPage() {
           <div className="bg-white rounded-xl shadow-sm p-6">
             <div className="flex justify-between  mb-5">
               <h2 className="font-semibold text-lg">
-              Today's Sessions
+               {`Today's Sessions`}
             </h2>
 
             <a href="/mentorship/today-session">

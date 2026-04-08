@@ -129,7 +129,7 @@ export default function NotificationsPage() {
 
         <ul className="space-y-2 text-sm text-gray-600">
           <li>Session scheduled between Emma Wilson and John Carter</li>
-          <li>Task "Authentication System" reviewed by mentor</li>
+          <li>{`Task "Authentication System" reviewed by mentor`}</li>
           <li>Backend Mentorship Program updated</li>
           <li>New mentee joined the Frontend Program</li>
         </ul>

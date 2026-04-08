@@ -71,8 +71,8 @@ export default function CompanyCulture() {
       Life at NextGen
     </h2>
     <p className="text-sm text-gray-500 mt-2 max-w-2xl">
-      At NextGen, we believe culture is built through ownership, collaboration,
-      and continuous growth. Here's what everyday life looks like inside our team.
+     {` At NextGen, we believe culture is built through ownership, collaboration,
+      and continuous growth. Here's what everyday life looks like inside our team.`}
     </p>
   </div>
 
